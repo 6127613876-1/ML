@@ -37,7 +37,7 @@ y_pred = dt.predict(X_test_lda)
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy}")
-# Evaluate the model with zero_division parameter to avoid warnings
+# Evaluate the model zero_division parameter to avoid warnings
 print("Classification Report:")
 print(classification_report(y_test, y_pred, zero_division=1))
 
